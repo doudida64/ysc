@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <title>YSC</title>
+</head>
+
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="images/hand-cream.png" alt="YSC" class="logo">
+            <ul class="nav-links">
+                <li>
+                    <a href="#" data-text="Accueil">Accueil</a>
+                </li>
+                <li>
+                    <a href="#best-sales" data-text="Nos meilleures ventes">Nos meilleures ventes</a>
+                </li>
+                <li>
+                    <a href="#best-sale" data-text="Nos plantes">Nos produits</a>
+                </li>
+                <li>
+                    <a href="#solde" data-text="Nos plantes">Soldes</a>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing">
+            <h1 class="big-title">Tout pour votre beauté.</h1>
+            <a href="#delivery" class="delivery-link">
+                <span class="scroll-text" data-text="Scroll">Scroll</span>
+                <i class="scroll-icon fas fa-angle-down"></i>
+            </a>
+        </div>
+    </section>
+    <section id="delivery" class="delivery-container">
+        <div class="shop">
+            <i class="delivery-icon fas fa-store"></i>
+            <p class="box-content">
+                Nos magasins à votre service
+            </p>
+        </div>
+        <div class="withdrawal">
+            <i class="delivery-icon fas fa-people-carry"></i>
+            <p class="box-content">
+                Retrait en magasin sans contact
+            </p>
+        </div>
+        <div class="delivery">
+            <i class="delivery-icon fas fa-truck"></i>
+            <p class="box-content">
+                Livraison à domicile sans contact
+            </p>
+        </div>
+    </section>
+    <section id="best-sales" class="best-sales-container">
+        <h1 class="section-title">Meilleures ventes</h1>
+        <div class="best-plants">
+            <a class="plant-box no-grid plant1">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Conditionner</h1>
+                    <h3 class="plant-price">1500 FCFA</h3>
+                </div>
+            </a>
+            <a class="plant-box no-grid plant2">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Huile de ricin</h1>
+                    <h3 class="plant-price">2000 FCFA</h3>
+                </div>
+            </a>
+            <a class="plant-box no-grid plant3">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Brosse</h1>
+                    <h3 class="plant-price">5000 FCFA</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="best-sale" class="best-sales-container">
+        <h1 class="section-title">Nos produits</h1>
+        <div class="best-plants">
+            <a class="plant-box no-grid plant4">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Patchouli</h1>
+                    <h3 class="plant-price">14000 FCFA</h3>
+                </div>
+            </a>
+            <a class="plant-box no-grid plant5">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Rouge à lèvre</h1>
+                    <h3 class="plant-price">3000 FCFA</h3>
+                </div>
+            </a>
+            <a class="plant-box no-grid plant6">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Poudre</h1>
+                    <h3 class="plant-price">3000 FCFA</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section id="solde" class="best-sales-container">
+        <h1 class="section-title">Soldes</h1>
+        <div class="best-plants">
+            <a class="plant-box no-grid plant7">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Butter</h1>
+                    <h3 class="pop"><del>2000 FCFA</del> </h3>
+                    <h3 class="plant-price">1500 FCFA</h3>
+                </div>
+            </a>
+            <a class="plant-box no-grid plant8">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Savon</h1>
+                    <h3 class="pop"><del>3500 FCFA</del> </h3>
+                    <h3 class="plant-price">3000 FCFA</h3>
+                </div>
+            </a>
+            <a class="plant-box no-grid plant9">
+                <div class="plant-bio">
+                    <h1 class="plant-name">Gel</h1>
+                    <h3 class="pop"><del>4000 FCFA</del> </h3>
+                    <h3 class="plant-price">3000 FCFA</h3>
+                </div>
+            </a>
+        </div>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; Mermoz</span>
+        <a href="" class="conditions">77 135 73 01 </a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.nav-links');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>
